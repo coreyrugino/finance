@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'dashboard#index'
   resources :bills
+  resources :deposits
 
   get '/sum_bills', to: 'bills#sum_bills'
   # The priority is based upon order of creation: first created -> highest priority.
